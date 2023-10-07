@@ -5,10 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Hello from './components/Hello';
 import Name from './components/Name';
-import Message from './components/Message';
-import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
-import Counter from './components/Counter';
+import CounterUseState from './components/CounterUseState';
+import CounterUseReducer from './components/CounterUseReducer';
+import { Parent } from './components/Parent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,10 +17,11 @@ root.render(
   <React.StrictMode>
     <Hello />
     <Name />
-    <Message />
     <Parent />
     <Page />
-    <Counter initialValue={0} />
+    <CounterUseState initialValue={0} />
+    <CounterUseReducer initialValue={0} />
+    
   </React.StrictMode>
 );
 
