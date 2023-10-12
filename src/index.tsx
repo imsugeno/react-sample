@@ -9,6 +9,8 @@ import Page from './components/ContextSample';
 import CounterUseState from './components/CounterUseState';
 import CounterUseReducer from './components/CounterUseReducer';
 import { Parent } from './components/Parent';
+import { ParentUseCallback } from './components/CounterUseCallback';
+import { UseMemoSample } from './components/UseMemoSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,7 +23,8 @@ root.render(
     <Page />
     <CounterUseState initialValue={0} />
     <CounterUseReducer initialValue={0} />
-    
+    <ParentUseCallback />
+    <UseMemoSample />
   </React.StrictMode>
 );
 
