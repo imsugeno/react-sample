@@ -1,30 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Hello from './components/Hello';
-import Name from './components/Name';
-import Page from './components/ContextSample';
-import CounterUseState from './components/CounterUseState';
-import CounterUseReducer from './components/CounterUseReducer';
-import { Parent } from './components/Parent';
-import { ParentUseCallback } from './components/CounterUseCallback';
-import { UseMemoSample } from './components/UseMemoSample';
+import { ClockApp } from './components/ClockApp';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Hello />
-    <Name />
-    <Parent />
-    <Page />
-    <CounterUseState initialValue={0} />
-    <CounterUseReducer initialValue={0} />
-    <ParentUseCallback />
-    <UseMemoSample />
+    <ClockApp />
   </React.StrictMode>
 );
 
