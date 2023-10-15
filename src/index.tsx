@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { Number } from './components/Number';
 import { ContextParent } from './components/UseContext';
 import { ImageUploader } from './components/UseRefSample';
+import { ParentUseImperativeHandle } from './components/UseImperativeHandleSample';
+import { Input } from './components/CoutumHookSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,6 +16,8 @@ root.render(
     <Number />
     <ContextParent />
     <ImageUploader />
+    <ParentUseImperativeHandle />
+    <Input />
   </React.StrictMode>
 );
 
