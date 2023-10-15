@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { ClockApp } from './components/ClockApp';
+import { Number } from './components/Number';
+import { ContextParent } from './components/UseContext';
+import { ImageUploader } from './components/UseRefSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ClockApp />
+    <Number />
+    <ContextParent />
+    <ImageUploader />
   </React.StrictMode>
 );
 

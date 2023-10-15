@@ -31,13 +31,11 @@ export const Clock = () => {
         // タイマーのセット
         const timer = setInterval(() => {
             setTimestamp(new Date())
-            console.log('setInterval working')
         }, UPDATE_CYCLE)
 
         // クリーンアップ関数を渡し、アンマウント時にタイマーの解除をする
         return () => {
             clearInterval(timer)
-            console.log('cleared')
         }
         // 初期描画時のみ実行する
     }, [])
